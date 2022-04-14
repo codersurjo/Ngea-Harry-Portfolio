@@ -1,6 +1,6 @@
 @media all and (max-width:991px){
     .main_area {
-    padding: 30px 0;
+    padding-bottom: 60px;
     }
     .hero_section::after {
         height: 97px;
@@ -45,6 +45,12 @@
         position: relative;
         font-size: 15px;
     }
+    .main_area.main_area_2 {
+        margin-top: -100%;
+    }
+    .single_portfolio {
+        height: 250px !important;
+    }
 }
 
 
@@ -69,6 +75,19 @@
     .hamburger-menu{
         display: block;
     }
+    .single_portfolio {
+        flex: 0 0 100% !important;
+        border-radius: 10px;
+        overflow: hidden;
+        height: auto !important;
+        margin-bottom: 15px;
+    }
+    .single_portfolio:last-child{
+        margin-bottom: 0;
+    }
+    .main_area.main_area_2 {
+        margin-top: -100%;
+    }
 }
 
 @media all and (max-width:575px){
@@ -87,5 +106,12 @@
     }
     .hero_con h1 {
         font-size: 33px;
+    }
+    .single_portfolio {
+        flex: 0 0 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        max-height: 360px;
+        margin-bottom: 15px;
     }
 }
