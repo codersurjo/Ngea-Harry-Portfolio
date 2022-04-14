@@ -109,3 +109,41 @@ a:hover{
 /*=================================================================
 				Start Main css
 =================================================================*/
+
+/* Header area design  */
+.header_area_design{
+}
+.logo{
+}
+.logo img{
+}
+.menu_design{
+}
+.menu_design ul{
+}
+.menu_design ul li{
+	
+}
+.menu_design ul li a{
+	position: relative;
+}
+.menu_design ul li:hover a{
+}
+.active a:after{
+
+}
+
+/* Hero section  */
+.hero_section{
+	position: relative;
+}
+.hero_section:after{
+	position: absolute;
+	content: "";
+}
+.hero_con{
+}
+.hero_con span{
+}
+.hero_con h1{
+}
