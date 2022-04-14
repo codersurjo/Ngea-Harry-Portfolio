@@ -140,7 +140,7 @@ a:hover{
 .menu_design ul li{
 	position: relative;
 	padding-right: 100px;
-	transform: 0.3s;
+	transition: 0.3s;
 }
 .menu_design ul li a{
 	position: relative;
@@ -218,7 +218,7 @@ a:hover{
 	line-height: normal;
 }
 .main_area{
-	min-height: 212px;
+	padding: 102px 0;
 	position: relative;
 }
 .main_area:after{
@@ -357,4 +357,126 @@ a:hover{
 }
 .sin_text p{
 	margin-top: 6px;
+}
+
+/* Humberger meu  */
+#menu__toggle {
+	opacity: 0;
+	position: absolute;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+	top: 0;
+	-webkit-transform: rotate(0);
+	    -ms-transform: rotate(0);
+	        transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+	top: 0;
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ ul {
+	visibility: visible;
+	right: 0;
+  }
+  
+  .menu__btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: relative;
+	top: 0;
+	right: 0;
+  
+	width: 26px;
+	height: 26px;
+  
+	cursor: pointer;
+	z-index: 1;
+	margin-bottom: 0;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+	display: block;
+	position: absolute;
+  
+	width: 100%;
+	height: 1px;
+  
+	background-color: #FFF;
+  
+	-webkit-transition-duration: .25s;
+  
+	     -o-transition-duration: .25s;
+  
+	        transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+	content: '';
+	top: -8px;
+  }
+  .menu__btn > span::after {
+	content: '';
+	top: 8px;
+  }
+  
+  .hamburger-menu ul {
+	display: block;
+	position: fixed;
+	visibility: hidden;
+	top: 0px;
+	right: -100%;
+  
+	width: 268px;
+	height: 100%;
+  
+	margin: 0;
+	padding: 80px 0;
+  
+	list-style: none;
+  
+  
+	-webkit-transition-duration: .25s;
+  
+  
+	     -o-transition-duration: .25s;
+  
+  
+	        transition-duration: .25s;
+	background: -o-linear-gradient(348.97deg, #8F4472 0%, #A74278 100%);
+	background: #84855e;
+  }
+  
+  .hamburger-menu ul  li a {
+	display: block;
+	padding: 9px 21px;
+
+	font-size: 16px;
+	font-weight: 500;
+  
+	text-decoration: none;
+  
+	-webkit-transition-duration: .25s;
+  
+	     -o-transition-duration: .25s;
+  
+	        transition-duration: .25s;
+	color: #FFF;
+  }
+ 
+.hamburger-menu{
+	display: none;
+	float: right;
 }
