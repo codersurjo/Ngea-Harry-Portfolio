@@ -51,6 +51,56 @@
     .single_portfolio {
         height: 250px !important;
     }
+    .Service_con {
+        padding: 23px;
+        margin-bottom: 15px;
+    }
+    .Service_con h2 {
+        font-size: 25px;
+        margin-bottom: 9px;
+    }
+    .Service_con p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .all_services {
+        padding: 16px;
+    }
+    .single_new_ser {
+        padding: 21px;
+        display: flex;
+    }
+    .ser_con {
+        padding-left: 18px;
+    }
+    .ser_con h2 {
+        font-size: 18px;
+    }
+    .ser_con p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .single_new_ser {
+        min-height: 190px;
+        padding: 19px;
+        display: flex;
+    }
+    .logo_left img {
+        width: 44px;
+    }
+    .single_progrss {
+        flex: 0 0 33.33%;
+        margin-bottom: 20px;
+    }
+
+    .all_skill_progress {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .skill_title p {
+        font-size: 15px;
+    }
 }
 
 
@@ -113,5 +163,19 @@
         overflow: hidden;
         max-height: 360px;
         margin-bottom: 15px;
+    }
+    .single_new_ser {
+        min-height: 190px;
+        padding: 19px;
+        display: block;
+        text-align: center;
+    }
+    .ser_con {
+        padding-left: 0;
+    }
+    .ser_con h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 16px;
     }
 }

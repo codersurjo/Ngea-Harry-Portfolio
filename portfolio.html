@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Ngea Harry-Portfolio</title>
+        <title>Ngea Harry</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<!-- normalize -->
         <link rel="stylesheet" href="assets/css/normalize.css">
+        <!-- Aos css  -->
+        <link rel="stylesheet" href="assets/css/aos.css">
 		<!-- Main Stylesheet -->
         <link rel="stylesheet" href="assets/css/style.css">
         <!-- responsive -->
@@ -44,9 +46,9 @@
                     <div class="col-md-8 col-6">
                         <div class="menu_design">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li class="active"><a href="#">Portfolio</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="service.html">Services</a></li>
+                                <li class="active"><a href="portfolio.html">Portfolio</a></li>
                             </ul>
                         </div>
                         <div class="hamburger-menu">
@@ -78,22 +80,22 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="portfolio_all_items">
-                            <h2>Photography</h2>
+                            <h2 data-aos="fade-up">Photography</h2>
                             <div class="all_portfolio">
                                 <!-- single  -->
-                                <div class="single_portfolio">
+                                <div class="single_portfolio" data-aos="fade-up">
                                     <a href="#">
                                         <img src="assets/images/Photography/squirrel_1_0.jpg" alt="Image">
                                     </a>
                                 </div>
                                  <!-- single  -->
-                                 <div class="single_portfolio">
+                                 <div class="single_portfolio" data-aos="fade-up">
                                     <a href="#">
                                         <img src="assets/images/Photography/pedestrians_urban_town_city.jpg" alt="Image">
                                     </a>
                                 </div>
                                  <!-- single  -->
-                                 <div class="single_portfolio">
+                                 <div class="single_portfolio" data-aos="fade-up">
                                     <a href="#">
                                         <img src="assets/images/Photography/birthday_party_15_years.jpg" alt="Image">
                                     </a>
@@ -101,22 +103,22 @@
                             </div>
                         </div>
                         <div class="portfolio_all_items">
-                            <h2>Videography</h2>
+                            <h2 data-aos="fade-up">Videography</h2>
                             <div class="all_portfolio">
                                 <!-- single  -->
-                                <div class="single_portfolio">
+                                <div class="single_portfolio" data-aos="fade-up">
                                     <a href="#">
                                         <img src="assets/images/videography/image_3.jpg" alt="Image">
                                     </a>
                                 </div>
                                  <!-- single  -->
-                                 <div class="single_portfolio">
+                                 <div class="single_portfolio" data-aos="fade-up">
                                     <a href="#">
                                         <img src="assets/images/videography/image_1.jpg" alt="Image">
                                     </a>
                                 </div>
                                  <!-- single  -->
-                                 <div class="single_portfolio">
+                                 <div class="single_portfolio" data-aos="fade-up">
                                     <a href="#">
                                         <img src="assets/images/videography/image_4.jpg" alt="Image">
                                     </a>
@@ -124,22 +126,22 @@
                             </div>
                         </div>
                         <div class="portfolio_all_items">
-                            <h2>Website</h2>
+                            <h2 data-aos="fade-up">Website</h2>
                             <div class="all_portfolio">
                                 <!-- single  -->
-                                <div class="single_portfolio">
+                                <div class="single_portfolio" data-aos="fade-up">
                                     <a href="#">
                                         <img src="assets/images/website/4.png" alt="Image">
                                     </a>
                                 </div>
                                  <!-- single  -->
-                                 <div class="single_portfolio">
+                                 <div class="single_portfolio" data-aos="fade-up">
                                     <a href="#">
                                         <img src="assets/images/website/5.png" alt="Image">
                                     </a>
                                 </div>
                                  <!-- single  -->
-                                 <div class="single_portfolio">
+                                 <div class="single_portfolio" data-aos="fade-up">
                                     <a href="#">
                                         <img src="assets/images/website/6.png" alt="Image">
                                     </a>
@@ -157,7 +159,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
-                        <div class="single_f">
+                        <div class="single_f" data-aos="fade-up">
                             <h2>Ngea Harry</h2>
                             <p>Subscribe Newsletter</p>
                             <form action="#">
@@ -169,7 +171,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="single_f">
+                        <div class="single_f" data-aos="fade-up">
                             <h2>Services</h2>
                             <div class="f_menu">
                                 <ul>
@@ -182,7 +184,7 @@
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-6">
-                        <div class="single_f">
+                        <div class="single_f" data-aos="fade-up">
                             <h2>Support</h2>
                             <div class="f_menu">
                                 <ul>
@@ -195,7 +197,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="single_f">
+                        <div class="single_f" data-aos="fade-up">
                             <h2>Follow</h2>
                             <div class="f_social">
                                 <ul>
@@ -267,8 +269,18 @@
         <script src="assets/js/bootstrap.min.js"></script>
 		<!-- Owl Carousel JS -->
         <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- Aos js  -->
+        <script src="assets/js/aos.js"></script>
 		<!-- Custom Scripts -->
         <script src="assets/js/main.js"></script>
+        <script>
+            AOS.init({
+              // offset: 200,
+              // duration: 1000,
+              delay: 50,
+              once: true
+            });
+        </script>
 
     </body>
 </html>

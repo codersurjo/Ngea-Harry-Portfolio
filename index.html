@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<!-- normalize -->
         <link rel="stylesheet" href="assets/css/normalize.css">
+        <!-- Aos css  -->
+        <link rel="stylesheet" href="assets/css/aos.css">
 		<!-- Main Stylesheet -->
         <link rel="stylesheet" href="assets/css/style.css">
         <!-- responsive -->
@@ -44,9 +46,9 @@
                     <div class="col-md-8 col-6">
                         <div class="menu_design">
                             <ul>
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Portfolio</a></li>
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="service.html">Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
                             </ul>
                         </div>
                         <div class="hamburger-menu">
@@ -74,9 +76,9 @@
                 <div class="row">
                     <div class="offset-md-6 col-md-6">
                         <div class="hero_con">
-                            <span>Hello, I am</span>
-                            <h1>Ngea Harry</h1>
-                            <span>UX Designer and Developer</span>
+                            <span data-aos="fade-up">Hello, I am</span>
+                            <h1 data-aos="fade-up">Ngea Harry</h1>
+                            <span data-aos="fade-up">UX Designer and Developer</span>
                         </div>
                     </div>
                 </div>
@@ -91,7 +93,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
-                        <div class="single_f">
+                        <div class="single_f" data-aos="fade-up">
                             <h2>Ngea Harry</h2>
                             <p>Subscribe Newsletter</p>
                             <form action="#">
@@ -103,7 +105,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="single_f">
+                        <div class="single_f" data-aos="fade-up">
                             <h2>Services</h2>
                             <div class="f_menu">
                                 <ul>
@@ -116,7 +118,7 @@
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-6">
-                        <div class="single_f">
+                        <div class="single_f" data-aos="fade-up">
                             <h2>Support</h2>
                             <div class="f_menu">
                                 <ul>
@@ -129,7 +131,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="single_f">
+                        <div class="single_f" data-aos="fade-up">
                             <h2>Follow</h2>
                             <div class="f_social">
                                 <ul>
@@ -201,8 +203,18 @@
         <script src="assets/js/bootstrap.min.js"></script>
 		<!-- Owl Carousel JS -->
         <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- Aos js  -->
+        <script src="assets/js/aos.js"></script>
 		<!-- Custom Scripts -->
         <script src="assets/js/main.js"></script>
+        <script>
+            AOS.init({
+              // offset: 200,
+              // duration: 1000,
+              delay: 50,
+              once: true
+            });
+        </script>
 
     </body>
 </html>
