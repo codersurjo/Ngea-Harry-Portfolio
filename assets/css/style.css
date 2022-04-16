@@ -1,164 +1,216 @@
 /*===============================================
 Default css
 ===============================================*/
-body{
-	margin:0;
-	padding:0;
+body {
+	margin: 0;
+	padding: 0;
 	font-family: 'Montserrat', sans-serif;
 	position: relative;
-	background:#FFF;
+	background: #FFF;
 	background: url(../images/overlay.png);
 	background-position: 0 0;
 }
-.main{
+
+.main {
 	position: relative;
-	background:url(../images/homebg.jpg) repeat scroll;
+	background: url(../images/homebg.jpg) repeat scroll;
 }
 
-h1,h2,h3,h4,h5,h6,p{
-	margin:0;
-	padding:0;
-}
-ul{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
 	margin: 0;
-	padding:0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
-a{
-	margin:0;
+
+a {
+	margin: 0;
 	text-decoration: none;
 }
-a:hover{
-	text-decoration:none;
+
+a:hover {
+	text-decoration: none;
 }
 
 /*=================================================================
 				Start Main css
 =================================================================*/
-h1,h2,h3,h4,h5,h6,p{
-	margin:0;
-	padding:0;
-}
-ul{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
 	margin: 0;
-	padding:0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
-a{
-	margin:0;
+
+a {
+	margin: 0;
 	text-decoration: none;
 }
-a:hover{
-	text-decoration:none;
+
+a:hover {
+	text-decoration: none;
 }
+
 /* Header area design  */
 .header_area_design {
 	position: absolute;
 	width: 100%;
-	z-index: 99;
+	z-index: 99999;
 	padding: 20px 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
-.logo{
-}
-.logo img{
+
+.logo {}
+
+.logo img {
 	width: 121px;
 }
-.menu_design{
+
+.menu_design {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: flex-end;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
 	height: 100%;
 }
-.menu_design ul{
+
+.menu_design ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
-.menu_design ul li{
+
+.menu_design ul li {
 	position: relative;
 	padding-right: 100px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
-.menu_design ul li a{
+
+.menu_design ul li a {
 	position: relative;
 	font-size: 20px;
 	color: #FFF;
 	font-weight: 700;
 	padding: 10px 0;
-	transform: 0.3s;
-	box-sizing: border-box;
+	-webkit-transform: 0.3s;
+	    -ms-transform: 0.3s;
+	        transform: 0.3s;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
-.active a{
+
+.active a {
 	color: #F4BD0B !important;
 }
-.menu_design ul li:hover a{
+
+.menu_design ul li:hover a {
 	color: #F4BD0B;
 }
-.menu_design ul li:hover a:after{
+
+.menu_design ul li:hover a:after {
 	position: absolute;
 	content: "";
 	width: 38px;
 	height: 2px;
-	background-color:#FFF;
+	background-color: #FFF;
 	bottom: 5px;
 	left: 0;
 }
-.active a:after{
+
+.active a:after {
 	position: absolute;
 	content: "";
 	width: 38px;
 	height: 2px;
-	background-color:#FFF;
+	background-color: #FFF;
 	bottom: 5px;
 	left: 0;
 }
 
 /* Hero section  */
-.hero_section{
+.hero_section {
 	position: relative;
-	z-index:11;
-	height: 798px;
+	z-index: 11;
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
-.hero_section:before{
+
+.hero_section:before {
 	position: absolute;
 	content: "";
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background:rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.4);
 	z-index: -1;
 }
-.hero_section:after{
+
+.hero_section:after {
 	position: absolute;
 	content: "";
 	bottom: -2px;
 	left: 0;
 	width: 100%;
 	height: 212px;
-	background:url(../images/after_path.png) no-repeat scroll 0 0 / 100% 100%;
+	background: url(../images/after_path.png) no-repeat scroll 0 0 / 100% 100%;
 	z-index: -1;
 }
-.hero_con{
-}
-.hero_con span{
+
+.hero_con {}
+
+.hero_con span {
 	color: #FFF;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: normal;
 }
-.hero_con h1{
+
+.hero_con h1 {
 	color: #F4BD0B;
 	font-size: 48px;
 	font-weight: 600;
 	line-height: normal;
 }
-.main_area{
+
+.main_area {
 	padding-bottom: 202px;
 	position: relative;
 }
-.main_area:after{
+
+.main_area:after {
 	/*! position: absolute; */
 	/*! content: ""; */
 	/*! width: 100%; */
@@ -169,26 +221,31 @@ a:hover{
 }
 
 /* Footer design  */
-.footer_area_design{
+.footer_area_design {
 	background-color: #F4BD0B;
 	padding-top: 90px;
-	box-shadow: 0 -26px 28px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 -26px 28px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 -26px 28px rgba(0, 0, 0, 0.1);
 }
-.single_f{
+
+.single_f {
 	padding-bottom: 50px;
 }
-.single_f p{
+
+.single_f p {
 	color: #FFFFFF;
 	font-size: 16px;
 	font-weight: 500;
 }
-.single_f h2{
+
+.single_f h2 {
 	color: #000000;
 	font-size: 20px;
 	font-weight: 700;
 	margin-bottom: 30px;
 }
-.new_input{
+
+.new_input {
 	max-width: 268px;
 	width: 100%;
 	height: 48px;
@@ -196,7 +253,8 @@ a:hover{
 	position: relative;
 	margin-top: 20px;
 }
-.new_input input{
+
+.new_input input {
 	width: 100%;
 	height: 100%;
 	color: #000000;
@@ -205,289 +263,366 @@ a:hover{
 	padding: 15px;
 	border: none;
 	font-family: 'Montserrat', sans-serif;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
-.new_input button{
+.new_input button {
 	position: absolute;
 	top: 0;
-	right:0;
+	right: 0;
 	width: 48px;
 	height: 48px;
-	background:#000;
+	background: #000;
 	border: navajowhite;
 }
-.new_input button i{
+
+.new_input button i {
 	color: #FFF;
 	font-size: 22px;
 }
-.f_menu ul li a{
+
+.f_menu ul li a {
 	color: #FFFFFF;
 	font-size: 16px;
 	font-weight: 500;
 	margin-bottom: 14px;
 	display: block;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
-.f_menu ul li:last-child a{
+
+.f_menu ul li:last-child a {
 	margin-bottom: 0;
 }
-.f_menu ul li:hover a{
+
+.f_menu ul li:hover a {
 	opacity: 0.8;
 }
-.f_social{
-}
-.f_social ul{
+
+.f_social {}
+
+.f_social ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
-.f_social ul li{
+
+.f_social ul li {
 	padding-right: 32px;
 }
-.f_social ul li a{
+
+.f_social ul li a {
 	color: #FFF;
 	font-size: 24px;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
 	transition: 0.2s;
 }
-.f_social ul li:hover a{
+
+.f_social ul li:hover a {
 	opacity: 0.8;
 }
-.all_address{
+
+.all_address {
 	padding: 16px 0;
 	border-top: 1px solid #FFFFFF;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
-.single_address{
-	display: flex;
-	align-items: center;
-	flex: 0 0 24%;
-}
-.single_address:nth-child(2){
-	flex:0 0 36%;
-}
-.single_circle{
-	width: 36px;
-	height: 36px;
-	border: 1px solid #FFFFFF;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.single_circle i{
-	color: #FFF;
-	font-size: 17px;
-}
-.sin_text{
-	padding-left: 11px;
-}
-.sin_text h3{
-	font-size: 12px;
-	font-weight: 500;
-	color: #FFF;
-	margin-bottom: 1px;
-}
-.sin_text a,
-.sin_text p{
 
-	font-size: 12px;
-	color: #FFF;
-	font-weight: 500;
-	line-height: normal;
-}
-.sin_text p{
-	margin-top: 6px;
-}
-a:hover{
-	text-decoration: none;
-}
-/* Humberger meu  */
-#menu__toggle {
-	opacity: 0;
-	position: absolute;
-  }
-  
-  #menu__toggle:checked ~ .menu__btn > span {
-	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	        transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-	top: 0;
-	-webkit-transform: rotate(0);
-	    -ms-transform: rotate(0);
-	        transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-	top: 0;
-	-webkit-transform: rotate(90deg);
-	    -ms-transform: rotate(90deg);
-	        transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ ul {
-	visibility: visible;
-	right: 0;
-  }
-  
-  .menu__btn {
+.single_address {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 24%;
+	        flex: 0 0 24%;
+}
+
+.single_address:nth-child(2) {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 36%;
+	        flex: 0 0 36%;
+}
+
+.single_circle {
+	width: 36px;
+	height: 36px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.single_circle i {
+	color: #FFF;
+	font-size: 17px;
+}
+
+.sin_text {
+	padding-left: 11px;
+}
+
+.sin_text h3 {
+	font-size: 12px;
+	font-weight: 500;
+	color: #FFF;
+	margin-bottom: 1px;
+}
+
+.sin_text a,
+.sin_text p {
+
+	font-size: 12px;
+	color: #FFF;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.sin_text p {
+	margin-top: 6px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* Humberger meu  */
+#menu__toggle {
+	opacity: 0;
+	position: absolute;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+	top: 0;
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+	top: 0;
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+#menu__toggle:checked~ul {
+	visibility: visible;
+	right: 0;
+}
+
+.menu__btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 	position: relative;
 	top: 0;
 	right: 0;
-  
+
 	width: 26px;
 	height: 26px;
-  
+
 	cursor: pointer;
 	z-index: 1;
 	margin-bottom: 0;
-  }
-  
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
 	display: block;
 	position: absolute;
-  
+
 	width: 100%;
 	height: 1px;
-  
+
 	background-color: #FFF;
-  
+
 	-webkit-transition-duration: .25s;
-  
-	     -o-transition-duration: .25s;
-  
-	        transition-duration: .25s;
-  }
-  .menu__btn > span::before {
+
+	-o-transition-duration: .25s;
+
+	transition-duration: .25s;
+}
+
+.menu__btn>span::before {
 	content: '';
 	top: -8px;
-  }
-  .menu__btn > span::after {
+}
+
+.menu__btn>span::after {
 	content: '';
 	top: 8px;
-  }
-  
-  .hamburger-menu ul {
+}
+
+.hamburger-menu ul {
 	display: block;
 	position: fixed;
 	visibility: hidden;
 	top: 0px;
 	right: -100%;
-  
+
 	width: 268px;
 	height: 100%;
-  
+
 	margin: 0;
 	padding: 80px 0;
-  
+
 	list-style: none;
-  
-  
+
+
 	-webkit-transition-duration: .25s;
-  
-  
-	     -o-transition-duration: .25s;
-  
-  
-	        transition-duration: .25s;
+
+
+	-o-transition-duration: .25s;
+
+
+	transition-duration: .25s;
 	background: -o-linear-gradient(348.97deg, #8F4472 0%, #A74278 100%);
 	background: #84855e;
-  }
-  
-  .hamburger-menu ul  li a {
+}
+
+.hamburger-menu ul li a {
 	display: block;
 	padding: 9px 21px;
 
 	font-size: 16px;
 	font-weight: 500;
-  
+
 	text-decoration: none;
-  
+
 	-webkit-transition-duration: .25s;
-  
-	     -o-transition-duration: .25s;
-  
-	        transition-duration: .25s;
+
+	-o-transition-duration: .25s;
+
+	transition-duration: .25s;
 	color: #FFF;
-  }
- 
-.hamburger-menu{
+}
+
+.hamburger-menu {
 	display: none;
 	float: right;
 }
+
 .main_area_2::after {
 	/*! background: url(../images/overlay.png); */
 	/*! top: -89%; */
 	/*! z-index: 99999; */
 }
-.portfolio_all_items{
+
+.portfolio_all_items {
 	background: #FFF;
 	padding: 30px;
 	border-radius: 12px;
-	box-shadow: 0 0 12px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 	margin: 20px 0;
 	position: relative;
-	z-index: 9999999999999999;
-	box-sizing: border-box;
+	/* z-index: 9999999999999999; */
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
-.portfolio_all_items:last-child{
+
+.portfolio_all_items:last-child {
 	margin-bottom: 0;
 }
-.portfolio_all_items h2{
+
+.portfolio_all_items h2 {
 	font-size: 25px;
 	font-weight: 600;
 	color: #000;
 	margin-bottom: 12px;
 }
-.all_portfolio{
+
+.all_portfolio {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
-.single_portfolio{
-	flex: 0 0 48%;
+
+.single_portfolio {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 48%;
+	        flex: 0 0 48%;
 	border-radius: 10px;
 	overflow: hidden;
 	height: 360px;
 }
-.single_portfolio:first-child{
+
+.single_portfolio:first-child {
 	height: 311px;
-	flex: 0 0 100%;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	        flex: 0 0 100%;
 	margin-bottom: 15px;
 }
-.single_portfolio img{
-	width:100%;
-	object-fit: cover;
+
+.single_portfolio img {
+	width: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	height: 100%;
 }
-.main_area.main_area_2 {
+
+.portfolio_area {
 	margin-top: -21%;
+	z-index: 99;
+	position: relative;
 }
 
 /* Service area design  */
 .hero_section.hero_section_3 {
-	align-items: flex-end;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
 	margin-bottom: 30px;
 }
-.Service_con{
+
+.Service_con {
 	padding: 47px;
 	background: #FFF;
 	overflow: hidden;
 	border-radius: 12px;
-	box-shadow: 0 0px 19px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0px 19px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 0px 19px rgba(0, 0, 0, 0.2);
 	margin-bottom: 19px;
 	max-width: 591px;
 	width: 100%;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
-.Service_con h2{
+
+.Service_con h2 {
 
 	font-size: 31px;
 	font-weight: 700;
@@ -495,303 +630,366 @@ a:hover{
 	margin-bottom: 27px;
 	line-height: normal;
 }
-.Service_con p{
+
+.Service_con p {
 	font-size: 16px;
 	font-weight: 600;
-	color: rgba(0,0,0,0.5);
+	color: rgba(0, 0, 0, 0.5);
 	line-height: 26px;
 }
-.services_area{
-}
-.all_services{
-	box-shadow: 0 0 17px rgba(0,0,0,0.1);
+
+.services_area {}
+
+.all_services {
+	-webkit-box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
 	padding: 30px;
 	background: #FCFCFC;
 	border-radius: 12px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
-.new_ser{
+
+.new_ser {
 	margin: 20px 0;
-	flex: 0 0 48%;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 48%;
+	        flex: 0 0 48%;
 }
-.single_new_ser{
+
+.single_new_ser {
 	background: #FFF;
-	box-shadow: 0 0 17px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
 	border-radius: 12px;
 	padding: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	min-height: 235px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
-.logo_left{
-}
-.logo_left img{
+
+.logo_left {}
+
+.logo_left img {
 	width: 70px;
 }
-.ser_con{
+
+.ser_con {
 	padding-left: 37px;
 }
-.ser_con h2{
+
+.ser_con h2 {
 	font-size: 25px;
 	font-weight: 700;
 	color: #000000;
 	margin-bottom: 15px;
 }
-.ser_con p{
+
+.ser_con p {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 32px;
-	color: rgba(0,0,0,0.5);
+	color: rgba(0, 0, 0, 0.5);
 }
 
 /* Progress Bars */
 .progress--bar {
-  height: 1.5rem;
-  margin: 1rem;
-  background-color: #ddd;
+	height: 1.5rem;
+	margin: 1rem;
+	background-color: #ddd;
 }
+
 .progress--bar:after {
-  content: "";
-  display: block;
-  height: 100%;
-  background-color: #63B8FF;
+	content: "";
+	display: block;
+	height: 100%;
+	background-color: #63B8FF;
 }
 
 .progress--circle {
-  position: relative;
-  display: inline-block;
-  margin: 1rem;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background-color: #ddd;
+	position: relative;
+	display: inline-block;
+	margin: 1rem;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: #ddd;
 }
+
 .progress--circle:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  background-color: white;
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	background-color: white;
 }
+
 .progress--circle:after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #63B8FF;
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #63B8FF;
 }
 
 .progress__number {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  line-height: 1;
-  margin-top: -0.75rem;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #777;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	line-height: 1;
+	margin-top: -0.75rem;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #777;
 }
 
 .progress--pie:before {
-  display: none;
-  /* Get rid of white circle for "pie chart style" meter */
+	display: none;
+	/* Get rid of white circle for "pie chart style" meter */
 }
+
 .progress--pie .progress__number {
-  color: white;
-  text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
+	color: white;
+	text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
 }
 
 /**
 * $step is set to 5 by default, meaning you can only use percentage classes in increments of five (e.g. 25, 30, 45, 50, and so on). This helps to reduce the size of the final CSS file. If you need a number that doesn't end in 0 or 5, you can change the text percentage while rounding the class up/down to the nearest 5.
 */
 .progress--bar.progress--0:after {
-  width: 0%;
+	width: 0%;
 }
 
 .progress--circle.progress--0:after {
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(90deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ddd), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, left top, right top, color-stop(50%, #63B8FF), color-stop(50%, #ddd), to(#ddd));
+	background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(left, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(90deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--5:after {
-  width: 5%;
+	width: 5%;
 }
 
 .progress--circle.progress--5:after {
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(108deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(342deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(108deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--10:after {
-  width: 10%;
+	width: 10%;
 }
 
 .progress--circle.progress--10:after {
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(126deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(324deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(126deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--15:after {
-  width: 15%;
+	width: 15%;
 }
 
 .progress--circle.progress--15:after {
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(144deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(306deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(144deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--20:after {
-  width: 20%;
+	width: 20%;
 }
 
 .progress--circle.progress--20:after {
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(162deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(288deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(162deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--25:after {
-  width: 25%;
+	width: 25%;
 }
 
 .progress--circle.progress--25:after {
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(180deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ddd), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #63B8FF), color-stop(50%, #ddd), to(#ddd));
+	background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(top, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(180deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--30:after {
-  width: 30%;
+	width: 30%;
 }
 
 .progress--circle.progress--30:after {
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(198deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(252deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(198deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--35:after {
-  width: 35%;
+	width: 35%;
 }
 
 .progress--circle.progress--35:after {
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(216deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(234deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(216deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--40:after {
-  width: 40%;
+	width: 40%;
 }
 
 .progress--circle.progress--40:after {
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(234deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(216deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(234deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--45:after {
-  width: 45%;
+	width: 45%;
 }
 
 .progress--circle.progress--45:after {
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(252deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(198deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(252deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--50:after {
-  width: 50%;
+	width: 50%;
 }
 
 .progress--circle.progress--50:after {
-  background-image: linear-gradient(-90deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, #63B8FF), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #63B8FF), color-stop(50%, #ddd), to(#ddd));
+	background-image: -o-linear-gradient(right, #63B8FF 50%, transparent 50%, transparent), -o-linear-gradient(right, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(-90deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--55:after {
-  width: 55%;
+	width: 55%;
 }
 
 .progress--circle.progress--55:after {
-  background-image: linear-gradient(-72deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(162deg, #63B8FF 50%, transparent 50%, transparent), -o-linear-gradient(right, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(-72deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--60:after {
-  width: 60%;
+	width: 60%;
 }
 
 .progress--circle.progress--60:after {
-  background-image: linear-gradient(-54deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(144deg, #63B8FF 50%, transparent 50%, transparent), -o-linear-gradient(right, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(-54deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--65:after {
-  width: 65%;
+	width: 65%;
 }
 
 .progress--circle.progress--65:after {
-  background-image: linear-gradient(-36deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(126deg, #63B8FF 50%, transparent 50%, transparent), -o-linear-gradient(right, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(-36deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--70:after {
-  width: 70%;
+	width: 70%;
 }
 
 .progress--circle.progress--70:after {
-  background-image: linear-gradient(-18deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(108deg, #63B8FF 50%, transparent 50%, transparent), -o-linear-gradient(right, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(-18deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--75:after {
-  width: 75%;
+	width: 75%;
 }
 
 .progress--circle.progress--75:after {
-  background-image: linear-gradient(0deg, #F7397F 50%, transparent 50%, transparent), linear-gradient(270deg, #F7397F 50%, #ddd 50%, #ddd);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #F7397F), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #F7397F), color-stop(50%, #ddd), to(#ddd));
+	background-image: -o-linear-gradient(bottom, #F7397F 50%, transparent 50%, transparent), -o-linear-gradient(right, #F7397F 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(0deg, #F7397F 50%, transparent 50%, transparent), linear-gradient(270deg, #F7397F 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--80:after {
-  width: 80%;
+	width: 80%;
 }
 
 .progress--circle.progress--80:after {
-  background-image: linear-gradient(18deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(72deg, #63B8FF 50%, transparent 50%, transparent), -o-linear-gradient(right, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(18deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--85:after {
-  width: 85%;
+	width: 85%;
 }
 
 .progress--circle.progress--85:after {
-  background-image: linear-gradient(36deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(54deg, #63B8FF 50%, transparent 50%, transparent), -o-linear-gradient(right, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(36deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--90:after {
-  width: 90%;
+	width: 90%;
 }
 
 .progress--circle.progress--90:after {
-  background-image: linear-gradient(54deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(36deg, #63B8FF 50%, transparent 50%, transparent), -o-linear-gradient(right, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(54deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--95:after {
-  width: 95%;
+	width: 95%;
 }
 
 .progress--circle.progress--95:after {
-  background-image: linear-gradient(72deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: -o-linear-gradient(18deg, #63B8FF 50%, transparent 50%, transparent), -o-linear-gradient(right, #63B8FF 50%, #ddd 50%, #ddd);
+	background-image: linear-gradient(72deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd);
 }
 
 .progress--bar.progress--100:after {
-  width: 100%;
+	width: 100%;
 }
 
 .progress--circle.progress--100:after {
-  background-image: linear-gradient(90deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd) !important;
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #63B8FF), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #63B8FF), color-stop(50%, #ddd), to(#ddd)) !important;
+	background-image: -o-linear-gradient(left, #63B8FF 50%, transparent 50%, transparent), -o-linear-gradient(right, #63B8FF 50%, #ddd 50%, #ddd) !important;
+	background-image: linear-gradient(90deg, #63B8FF 50%, transparent 50%, transparent), linear-gradient(270deg, #63B8FF 50%, #ddd 50%, #ddd) !important;
 }
 
 .p1::after {
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #F7397F), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #F7397F), color-stop(50%, #ddd), to(#ddd)) !important;
+	background-image: -o-linear-gradient(bottom, #F7397F 50%, transparent 50%, transparent), -o-linear-gradient(right, #F7397F 50%, #ddd 50%, #ddd) !important;
 	background-image: linear-gradient(0deg, #F7397F 50%, transparent 50%, transparent), linear-gradient(270deg, #F7397F 50%, #ddd 50%, #ddd) !important;
 }
+
 .p2::after {
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #B523E2), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #B523E2), color-stop(50%, #ddd), to(#ddd)) !important;
+	background-image: -o-linear-gradient(bottom, #B523E2 50%, transparent 50%, transparent), -o-linear-gradient(right, #B523E2 50%, #ddd 50%, #ddd) !important;
 	background-image: linear-gradient(0deg, #B523E2 50%, transparent 50%, transparent), linear-gradient(270deg, #B523E2 50%, #ddd 50%, #ddd) !important;
 }
 
 .p3::after {
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #1176E4), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #1176E4), color-stop(50%, #ddd), to(#ddd)) !important;
+	background-image: -o-linear-gradient(bottom, #1176E4 50%, transparent 50%, transparent), -o-linear-gradient(right, #1176E4 50%, #ddd 50%, #ddd) !important;
 	background-image: linear-gradient(0deg, #1176E4 50%, transparent 50%, transparent), linear-gradient(270deg, #1176E4 50%, #ddd 50%, #ddd) !important;
 }
+
 .p4::after {
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #31BEBF), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #31BEBF), color-stop(50%, #ddd), to(#ddd)) !important;
+	background-image: -o-linear-gradient(bottom, #31BEBF 50%, transparent 50%, transparent), -o-linear-gradient(right, #31BEBF 50%, #ddd 50%, #ddd) !important;
 	background-image: linear-gradient(0deg, #31BEBF 50%, transparent 50%, transparent), linear-gradient(270deg, #31BEBF 50%, #ddd 50%, #ddd) !important;
 }
+
 .p5::after {
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #FD925A), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #FD925A), color-stop(50%, #ddd), to(#ddd)) !important;
+	background-image: -o-linear-gradient(bottom, #FD925A 50%, transparent 50%, transparent), -o-linear-gradient(right, #FD925A 50%, #ddd 50%, #ddd) !important;
 	background-image: linear-gradient(0deg, #FD925A 50%, transparent 50%, transparent), linear-gradient(270deg, #FD925A 50%, #ddd 50%, #ddd) !important;
 }
 
@@ -800,14 +998,20 @@ a:hover{
 
 /* Skill css   */
 .all_skill_progress {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
+
 .single_progrss_22 {
 	background: #FFFF;
 	border-radius: 50%;
 }
+
 .single_progrss p {
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 16px;
@@ -817,62 +1021,107 @@ a:hover{
 
 
 .skill_all {
-	box-shadow: 0 0 17px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
 	padding: 30px;
 	background: #FCFCFC;
 	margin-top: 30px;
 	border-radius: 12px;
 }
-.skill_title{
+
+.skill_title {
 	text-align: center;
 	margin-bottom: 30px;
 }
-.skill_title h2{
+
+.skill_title h2 {
 	font-size: 25px;
 	font-weight: 700;
 	color: #000;
 	margin-bottom: 20px;
 }
 
-.skill_title p{
+.skill_title p {
 	font-size: 16px;
-font-weight: 500;
-line-height: 26px;
-color: rgba(0,0,0,0.5);
-max-width: 732px;
-width: 100%;
-margin: 0 auto;
+	font-weight: 500;
+	line-height: 26px;
+	color: rgba(0, 0, 0, 0.5);
+	max-width: 732px;
+	width: 100%;
+	margin: 0 auto;
 }
+
 .single_progrss {
 	margin-bottom: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
+
 /* End Skill css  */
 
 
 /* New some css  */
-.skill_area_design {
+.padding-bottom {
 	padding-bottom: 225px;
 }
+
 .main-menu {
-	flex: 0 0 58%;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 58%;
+	        flex: 0 0 58%;
 }
-.main-area{
+
+.main-area {
 	max-width: 1120px;
 	width: 100%;
 	margin: 0 auto;
 }
-.all_header_con{
+
+.all_header_con {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
+
 .full_futter {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
+
+.hero_full_con {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+
+.hero_con {
+	width: 50%;
+
+}
+
 /* End New some css  */
