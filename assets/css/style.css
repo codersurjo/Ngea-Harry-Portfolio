@@ -31,100 +31,33 @@ a{
 a:hover{
 	text-decoration:none;
 }
-.pt-10{
-	margin-top:10px;
-}
-.pt-20{
-	margin-top:20px;
-}
-.pt-30{
-	margin-top:30px;
-}
-.pt-40{
-	margin-top:40px;
-}
-.pt-50{
-	margin-top:50px;
-}
-.pt-60{
-	margin-top:60px;
-}
-.pt-70{
-	margin-top:70px;
-}
-.pt-80{
-	margin-top:80px;
-}
-.pt-90{
-	margin-top:90px;
-}
-.pt-100{
-	margin-top:100px;
-}
-.pb-10{
-	margin-bottom: 10px;
-}
-.pb-20{
-	margin-bottom: 20px;
-}
-
-.pb-30{
-	margin-bottom: 30px;
-}
-
-.pb-40{
-	margin-bottom: 40px;
-}
-.pb-50{
-	margin-bottom: 50px;
-}
-.pb-60{
-	margin-bottom: 60px;
-}
-.pb-70{
-	margin-bottom: 70px;
-}
-.pb-80{
-	margin-bottom: 80px;
-}
-.pb-90{
-	margin-bottom: 90px;
-}
-.pb-100{
-	margin-bottom: 100px;
-}
-
-.section_padding{
-	padding: 100px 0;
-}
-.section_heading{
-	text-align: center;
-}
-.section_heading h2{
-	position: relative;
-}
-.section_heading h2:after{
-	position: absolute;
-	content: "";
-}
-.section_heading h2:before{
-	position: absolute;
-	content: "";
-}
-.section_heading p{
-}
-
 
 /*=================================================================
 				Start Main css
 =================================================================*/
-
+h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+	padding:0;
+}
+ul{
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+a{
+	margin:0;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration:none;
+}
 /* Header area design  */
 .header_area_design {
 	position: absolute;
 	width: 100%;
 	z-index: 99;
 	padding: 20px 0;
+	box-sizing: border-box;
 }
 .logo{
 }
@@ -143,6 +76,7 @@ a:hover{
 	position: relative;
 	padding-right: 100px;
 	transition: 0.3s;
+	box-sizing: border-box;
 }
 .menu_design ul li a{
 	position: relative;
@@ -151,6 +85,7 @@ a:hover{
 	font-weight: 700;
 	padding: 10px 0;
 	transform: 0.3s;
+	box-sizing: border-box;
 }
 .active a{
 	color: #F4BD0B !important;
@@ -181,7 +116,7 @@ a:hover{
 .hero_section{
 	position: relative;
 	z-index:11;
-	height: 100vh;
+	height: 798px;
 	display: flex;
 	align-items: center;
 }
@@ -270,6 +205,7 @@ a:hover{
 	padding: 15px;
 	border: none;
 	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
 }
 
 .new_input button{
@@ -319,6 +255,7 @@ a:hover{
 	padding: 16px 0;
 	border-top: 1px solid #FFFFFF;
 	display: flex;
+	box-sizing: border-box;
 }
 .single_address{
 	display: flex;
@@ -361,7 +298,9 @@ a:hover{
 .sin_text p{
 	margin-top: 6px;
 }
-
+a:hover{
+	text-decoration: none;
+}
 /* Humberger meu  */
 #menu__toggle {
 	opacity: 0;
@@ -496,6 +435,7 @@ a:hover{
 	margin: 20px 0;
 	position: relative;
 	z-index: 9999999999999999;
+	box-sizing: border-box;
 }
 .portfolio_all_items:last-child{
 	margin-bottom: 0;
@@ -543,6 +483,9 @@ a:hover{
 	border-radius: 12px;
 	box-shadow: 0 0px 19px rgba(0,0,0,0.2);
 	margin-bottom: 19px;
+	max-width: 591px;
+	width: 100%;
+	box-sizing: border-box;
 }
 .Service_con h2{
 
@@ -565,17 +508,22 @@ a:hover{
 	padding: 30px;
 	background: #FCFCFC;
 	border-radius: 12px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .new_ser{
 	margin: 20px 0;
+	flex: 0 0 48%;
 }
 .single_new_ser{
 	background: #FFF;
 	box-shadow: 0 0 17px rgba(0,0,0,0.1);
 	border-radius: 12px;
-	min-height: 235px;
 	padding: 30px;
 	display: flex;
+	min-height: 235px;
+	box-sizing: border-box;
 }
 .logo_left{
 }
@@ -594,7 +542,7 @@ a:hover{
 .ser_con p{
 	font-size: 16px;
 	font-weight: 500;
-	line-height: 26px;
+	line-height: 32px;
 	color: rgba(0,0,0,0.5);
 }
 
@@ -903,3 +851,28 @@ margin: 0 auto;
 	align-items: center;
 }
 /* End Skill css  */
+
+
+/* New some css  */
+.skill_area_design {
+	padding-bottom: 225px;
+}
+.main-menu {
+	flex: 0 0 58%;
+}
+.main-area{
+	max-width: 1120px;
+	width: 100%;
+	margin: 0 auto;
+}
+.all_header_con{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.full_futter {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+/* End New some css  */
