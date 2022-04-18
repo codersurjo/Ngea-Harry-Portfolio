@@ -1125,3 +1125,321 @@ a:hover {
 }
 
 /* End New some css  */
+
+
+
+/* All Responsive css  */
+@media all and (max-width:1199px) {
+    .main-area {
+        max-width: 95%;
+    }
+
+    .padding-bottom {
+        padding-bottom: 120px;
+    }
+}
+
+@media all and (max-width:991px) {
+    .main_area {
+        padding-bottom: 60px;
+    }
+
+    .hero_section::after {
+        height: 97px;
+    }
+
+    .main_area::after {
+        height: 234%;
+        top: -142%;
+        z-index: 99999;
+    }
+
+    .footer_area_design {
+        padding-top: 56px;
+    }
+
+    .single_f h2 {
+        font-size: 17px;
+        margin-bottom: 18px;
+    }
+
+    .f_social ul li {
+        padding-right: 17px;
+    }
+
+    .f_social ul li a {
+        font-size: 18px;
+    }
+
+    .f_menu ul li a {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    .new_input input {
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    .single_address {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 33%;
+                flex: 0 0 33%;
+    }
+
+    .menu_design ul li {
+        position: relative;
+        padding-right: 63px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    .menu_design ul li a {
+        position: relative;
+        font-size: 15px;
+    }
+
+    .portfolio_area {
+        margin-top: -100%;
+    }
+
+    .single_portfolio {
+        height: 250px !important;
+    }
+
+    .Service_con {
+        padding: 23px;
+        margin-bottom: 15px;
+    }
+
+    .Service_con h2 {
+        font-size: 25px;
+        margin-bottom: 9px;
+    }
+
+    .Service_con p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .all_services {
+        padding: 16px;
+    }
+
+    .single_new_ser {
+        padding: 21px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .ser_con {
+        padding-left: 18px;
+    }
+
+    .ser_con h2 {
+        font-size: 18px;
+    }
+
+    .ser_con p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .single_new_ser {
+        min-height: 221px;
+        padding: 19px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .logo_left img {
+        width: 44px;
+    }
+
+    .single_progrss {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 33.33%;
+                flex: 0 0 33.33%;
+        margin-bottom: 20px;
+    }
+
+    .all_skill_progress {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .skill_title p {
+        font-size: 15px;
+    }
+}
+
+
+@media all and (max-width:767px) {
+    .single_address {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+    }
+
+    .all_address {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .single_address:last-child {
+        margin-top: 20px;
+    }
+
+    .logo img {
+        width: 86px;
+    }
+
+    .menu_design {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .single_portfolio {
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 100% !important;
+                flex: 0 0 100% !important;
+        border-radius: 10px;
+        overflow: hidden;
+        height: auto !important;
+        margin-bottom: 15px;
+    }
+
+    .single_portfolio:last-child {
+        margin-bottom: 0;
+    }
+
+    .portfolio_area {
+        margin-top: -100%;
+    }
+
+    .single_new_ser {
+        display: block;
+    }
+
+    .ser_con {
+        padding-left: 0;
+        padding-top: 17px;
+    }
+
+    .padding-bottom {
+        padding-bottom: 73px;
+    }
+
+    .single_f {
+        padding-bottom: 50px;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 45%;
+                flex: 0 0 45%;
+    }
+
+    .hero_con {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:575px) {
+    .single_address {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+    }
+
+    .single_address {
+        margin-bottom: 20px;
+    }
+
+    .single_address:last-child {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .hero_con span {
+        font-size: 14px;
+    }
+
+    .hero_con h1 {
+        font-size: 33px;
+    }
+
+    .single_portfolio {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        max-height: 360px;
+        margin-bottom: 15px;
+    }
+
+    .single_new_ser {
+        min-height: 190px;
+        padding: 19px;
+        display: block;
+        text-align: center;
+    }
+
+    .ser_con {
+        padding-left: 0;
+    }
+
+    .ser_con h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 16px;
+    }
+
+    .new_ser {
+        margin: 20px 0;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+    }
+
+    .logo_left img {
+        width: 57px;
+    }
+
+    .ser_con {
+        padding-left: 0;
+        padding-top: 0px;
+    }
+
+    .single_f {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+    }
+}
+
+/* End All responsive css  */
+
+/* End All responsive css  */
